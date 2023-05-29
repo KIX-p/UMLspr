@@ -1,5 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Uczen uczen1 = new Uczen("pawel", "kikh", "124351235", "3TP");
+        Komputer komputer=new Komputer();
+        komputer.setNumer(1);
+        komputer.setCzyDziala(true);
+
+        Pracownia pracownia = new Pracownia();
+        pracownia.dodajKomputerDoUcznia(uczen1, komputer);
+
+        pracownia.wyswietl();
     }
 }
